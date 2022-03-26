@@ -363,6 +363,7 @@
     <EmbeddedResource Include="Ribbons\ReadInspectorCustomRibbon.resx">
       <DependentUpon>ReadInspectorCustomRibbon.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Core_TemporaryKey.pfx" />
     <None Include="FilingHelper_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\AddinSettings.settings">
@@ -518,10 +519,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>FilingHelper_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Core_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>085584EC28DF596D2FEA05F16FA23371880264D5</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>82BFC5E6D9B8E46FECF611D5A9E0CDF9150F5A91</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
