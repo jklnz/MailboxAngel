@@ -594,6 +594,19 @@ namespace FilingHelper
                 }
                 ((Folder)Explorer.CurrentFolder).BeforeItemMove += ThisAddIn_BeforeItemMove;
             });
+            Explorer.InlineResponse += Explorer_InlineResponse;
+            Explorer.InlineResponseClose += Explorer_InlineResponseClose;
+        }
+
+        private void Explorer_InlineResponseClose()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Explorer_InlineResponse(object Item)
+        {
+            throw new NotImplementedException();
+            
         }
 
         private void ThisAddIn_BeforeItemMove(object Item, MAPIFolder MoveTo, ref bool Cancel)

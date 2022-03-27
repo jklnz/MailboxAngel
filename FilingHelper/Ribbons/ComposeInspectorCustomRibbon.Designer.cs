@@ -35,11 +35,17 @@
         private void InitializeComponent()
         {
             Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl1 = this.Factory.CreateRibbonDialogLauncher();
+            Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl2 = this.Factory.CreateRibbonDialogLauncher();
             this.tab1 = this.Factory.CreateRibbonTab();
             this.ComposeGroup = this.Factory.CreateRibbonGroup();
             this.btnAttachments = this.Factory.CreateRibbonButton();
+            this.tab2 = this.Factory.CreateRibbonTab();
+            this.group1 = this.Factory.CreateRibbonGroup();
+            this.button1 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.ComposeGroup.SuspendLayout();
+            this.tab2.SuspendLayout();
+            this.group1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -67,15 +73,43 @@
             this.btnAttachments.ShowImage = true;
             this.btnAttachments.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnAttachments_Click);
             // 
+            // tab2
+            // 
+            this.tab2.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
+            this.tab2.ControlId.OfficeId = "TabMail";
+            this.tab2.Groups.Add(this.group1);
+            this.tab2.Label = "TabMail";
+            this.tab2.Name = "tab2";
+            // 
+            // group1
+            // 
+            this.group1.DialogLauncher = ribbonDialogLauncherImpl2;
+            this.group1.Items.Add(this.button1);
+            this.group1.Label = "Mailbox Angel";
+            this.group1.Name = "group1";
+            // 
+            // button1
+            // 
+            this.button1.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.button1.Label = "Attachment Helper";
+            this.button1.Name = "button1";
+            this.button1.OfficeImageId = "MultiplePages";
+            this.button1.ShowImage = true;
+            // 
             // ComposeInspectorCustomRibbon
             // 
             this.Name = "ComposeInspectorCustomRibbon";
             this.RibbonType = "Microsoft.Outlook.Mail.Compose";
             this.Tabs.Add(this.tab1);
+            this.Tabs.Add(this.tab2);
             this.tab1.ResumeLayout(false);
             this.tab1.PerformLayout();
             this.ComposeGroup.ResumeLayout(false);
             this.ComposeGroup.PerformLayout();
+            this.tab2.ResumeLayout(false);
+            this.tab2.PerformLayout();
+            this.group1.ResumeLayout(false);
+            this.group1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -85,6 +119,9 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup ComposeGroup;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnAttachments;
+        private Microsoft.Office.Tools.Ribbon.RibbonTab tab2;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
     }
 
     partial class ThisRibbonCollection

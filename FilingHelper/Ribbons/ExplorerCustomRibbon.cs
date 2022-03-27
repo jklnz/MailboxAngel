@@ -297,6 +297,12 @@ namespace FilingHelper
             _settingsForm = new Controls.Settings.SettingsFrm(1);
             _settingsForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, RibbonControlEventArgs e)
+        {
+            _settingsForm = new Controls.Settings.SettingsFrm();
+            _settingsForm.ShowDialog();
+        }
     }
 }
 

@@ -52,6 +52,7 @@
             this.grpFilingGroup = this.Factory.CreateRibbonGroup();
             this.mnuSuggestions = this.Factory.CreateRibbonMenu();
             this.btnMoveSearch = this.Factory.CreateRibbonButton();
+            this.button1 = this.Factory.CreateRibbonButton();
             this.tab3 = this.Factory.CreateRibbonTab();
             this.group3 = this.Factory.CreateRibbonGroup();
             this.btnResearchPane = this.Factory.CreateRibbonButton();
@@ -171,6 +172,7 @@
             this.grpFilingGroup.DialogLauncher = ribbonDialogLauncherImpl2;
             this.grpFilingGroup.Items.Add(this.mnuSuggestions);
             this.grpFilingGroup.Items.Add(this.btnMoveSearch);
+            this.grpFilingGroup.Items.Add(this.button1);
             this.grpFilingGroup.Label = "Move Message";
             this.grpFilingGroup.Name = "grpFilingGroup";
             this.grpFilingGroup.Position = this.Factory.RibbonPosition.BeforeOfficeId("GroupCurrentView");
@@ -193,6 +195,12 @@
             this.btnMoveSearch.OfficeImageId = "ZoomToSelection";
             this.btnMoveSearch.ShowImage = true;
             this.btnMoveSearch.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnMoveSearch_Click);
+            // 
+            // button1
+            // 
+            this.button1.Label = "Settings";
+            this.button1.Name = "button1";
+            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
             // tab3
             // 
@@ -299,6 +307,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCloseAll;
         private System.Windows.Forms.ImageList imageList1;
         private Microsoft.Office.Tools.Ribbon.RibbonButton btnMoveSearch;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
     }
 
     partial class ThisRibbonCollection
