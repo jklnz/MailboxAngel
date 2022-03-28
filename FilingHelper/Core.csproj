@@ -197,24 +197,6 @@
     <Compile Include="Controls\Settings\AttachmentHelperSettingsPanel.Designer.cs">
       <DependentUpon>AttachmentHelperSettingsPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Settings\FilingSuggestionsSettingsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\Settings\FilingSuggestionsSettingsPanel.Designer.cs">
-      <DependentUpon>FilingSuggestionsSettingsPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Settings\FolderHistorySettingsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\Settings\FolderHistorySettingsPanel.Designer.cs">
-      <DependentUpon>FolderHistorySettingsPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Settings\MailHistorySettingsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\Settings\MailHistorySettingsPanel.Designer.cs">
-      <DependentUpon>MailHistorySettingsPanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Settings\ISettingsDialogPanel.cs" />
     <Compile Include="Controls\Settings\SettingsPanelBase.cs">
       <SubType>UserControl</SubType>
@@ -222,7 +204,6 @@
     <Compile Include="Controls\Settings\SettingsPanelBase.Designer.cs">
       <DependentUpon>SettingsPanelBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="MailHistoryManager.cs" />
     <Compile Include="Properties\AddinSettings.cs" />
     <Compile Include="Properties\AddinSettings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -241,36 +222,6 @@
     <Compile Include="Controls\AttachmentsPaneCtrl.Designer.cs">
       <DependentUpon>AttachmentsPaneCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\FolderArchiverCtrl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\FolderArchiverCtrl.Designer.cs">
-      <DependentUpon>FolderArchiverCtrl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\FolderPromptCtrl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\FolderPromptCtrl.Designer.cs">
-      <DependentUpon>FolderPromptCtrl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\ResearchItemSingleCtrl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ResearchItemSingleCtrl.Designer.cs">
-      <DependentUpon>ResearchItemSingleCtrl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\ResearchPanelCtrl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ResearchPanelCtrl.Designer.cs">
-      <DependentUpon>ResearchPanelCtrl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\SelectFolderFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls\SelectFolderFrm.Designer.cs">
-      <DependentUpon>SelectFolderFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Settings\SettingsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,9 +230,6 @@
     </Compile>
     <Compile Include="Controls\TreeNodeTag.cs" />
     <Compile Include="ExplorerWrapper.cs" />
-    <Compile Include="FolderArchiver.cs" />
-    <Compile Include="FolderHistoryManager.cs" />
-    <Compile Include="FolderNavigator.cs" />
     <Compile Include="ResponseServices.cs" />
     <Compile Include="Ribbons\ComposeInspectorCustomRibbon.cs">
       <SubType>Component</SubType>
@@ -314,37 +262,8 @@
       <DependentUpon>AttachmentsPaneCtrl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\FolderArchiverCtrl.resx">
-      <DependentUpon>FolderArchiverCtrl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\FolderPromptCtrl.resx">
-      <DependentUpon>FolderPromptCtrl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ResearchItemSingleCtrl.resx">
-      <DependentUpon>ResearchItemSingleCtrl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ResearchPanelCtrl.resx">
-      <DependentUpon>ResearchPanelCtrl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\SelectFolderFrm.resx">
-      <DependentUpon>SelectFolderFrm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Settings\AttachmentHelperSettingsPanel.resx">
       <DependentUpon>AttachmentHelperSettingsPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Settings\FilingSuggestionsSettingsPanel.resx">
-      <DependentUpon>FilingSuggestionsSettingsPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Settings\FolderHistorySettingsPanel.resx">
-      <DependentUpon>FolderHistorySettingsPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Settings\MailHistorySettingsPanel.resx">
-      <DependentUpon>MailHistorySettingsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Settings\SettingsFrm.resx">
       <DependentUpon>SettingsFrm.cs</DependentUpon>
@@ -399,10 +318,6 @@
     <ProjectReference Include="..\AttachmentManager\AttachmentManager.csproj">
       <Project>{71a54753-03bd-45ee-ad96-14ee29b0ff1f}</Project>
       <Name>AttachmentManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FilingSuggester\FilingSuggester.csproj">
-      <Project>{cfe00af6-0a0c-4c32-9734-5f468df3d602}</Project>
-      <Name>FilingSuggester</Name>
     </ProjectReference>
     <ProjectReference Include="..\HelperUtils\HelperUtils.csproj">
       <Project>{589bd1d2-2689-4844-b1be-e571cc0911af}</Project>

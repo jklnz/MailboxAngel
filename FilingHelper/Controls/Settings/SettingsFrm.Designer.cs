@@ -31,9 +31,6 @@
             this.btnSaveSetting = new System.Windows.Forms.Button();
             this.ctrlMenu = new HelperUtils.SideMenu();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.ctrlSuggestions = new FilingHelper.Controls.Settings.FilingSuggestionsSettingsPanel();
-            this.ctrlMail = new FilingHelper.Controls.Settings.MailHistorySettingsPanel();
-            this.ctrlFolders = new FilingHelper.Controls.Settings.FolderHistorySettingsPanel();
             this.ctrlAttachments = new FilingHelper.Controls.Settings.AttachmentHelperSettingsPanel();
             this.SuspendLayout();
             // 
@@ -52,10 +49,7 @@
             // 
             this.ctrlMenu.BackColor = System.Drawing.SystemColors.Window;
             this.ctrlMenu.Items = new string[] {
-        "Attachments Helper",
-        "Folders History",
-        "Filing Suggestions",
-        "Mail History"};
+        "Attachments Helper"};
             this.ctrlMenu.Location = new System.Drawing.Point(3, 1);
             this.ctrlMenu.Name = "ctrlMenu";
             this.ctrlMenu.SelectedItem = 0;
@@ -74,33 +68,6 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // ctrlSuggestions
-            // 
-            this.ctrlSuggestions.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ctrlSuggestions.Location = new System.Drawing.Point(174, 1);
-            this.ctrlSuggestions.Name = "ctrlSuggestions";
-            this.ctrlSuggestions.Size = new System.Drawing.Size(854, 413);
-            this.ctrlSuggestions.TabIndex = 17;
-            this.ctrlSuggestions.Visible = false;
-            // 
-            // ctrlMail
-            // 
-            this.ctrlMail.BackColor = System.Drawing.SystemColors.Window;
-            this.ctrlMail.Location = new System.Drawing.Point(174, 1);
-            this.ctrlMail.Name = "ctrlMail";
-            this.ctrlMail.Size = new System.Drawing.Size(854, 413);
-            this.ctrlMail.TabIndex = 16;
-            this.ctrlMail.Visible = false;
-            // 
-            // ctrlFolders
-            // 
-            this.ctrlFolders.BackColor = System.Drawing.SystemColors.Window;
-            this.ctrlFolders.Location = new System.Drawing.Point(174, 1);
-            this.ctrlFolders.Name = "ctrlFolders";
-            this.ctrlFolders.Size = new System.Drawing.Size(854, 413);
-            this.ctrlFolders.TabIndex = 15;
-            this.ctrlFolders.Visible = false;
-            // 
             // ctrlAttachments
             // 
             this.ctrlAttachments.BackColor = System.Drawing.SystemColors.Window;
@@ -115,9 +82,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1031, 445);
-            this.Controls.Add(this.ctrlSuggestions);
-            this.Controls.Add(this.ctrlMail);
-            this.Controls.Add(this.ctrlFolders);
             this.Controls.Add(this.ctrlAttachments);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.ctrlMenu);
@@ -132,15 +96,8 @@
         #endregion
         private System.Windows.Forms.Button btnSaveSetting;
         private HelperUtils.SideMenu ctrlMenu;
-        //private EmailSignatureSettingsPanel ctrlSignauresPanel;
-        private MailHistorySettingsPanel ctrlMailHistoryPanel;
         private AttachmentHelperSettingsPanel ctrlAttachmentsPanel;
         private System.Windows.Forms.Button btnCancel;
-        private FilingSuggestionsSettingsPanel ctlSuggestionsPanel;
         private AttachmentHelperSettingsPanel ctrlAttachments;
-        private FolderHistorySettingsPanel ctrlFolders;
-        private MailHistorySettingsPanel ctrlMail;
-        private FilingSuggestionsSettingsPanel ctrlSuggestions;
-        //private EmailSignatureSettingsPanel ctrlSignatures;
     }
 }
